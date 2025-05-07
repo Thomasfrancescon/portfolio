@@ -17,10 +17,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        process.env.EMAILJS_SERVICE_ID!,
-        process.env.EMAILJS_TEMPLATE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         e.currentTarget as HTMLFormElement,
-        process.env.EMAILJS_USER_ID!
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
       )
       .then(
         result => {
